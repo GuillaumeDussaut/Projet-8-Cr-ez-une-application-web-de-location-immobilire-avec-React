@@ -42,14 +42,46 @@
     color:#FFF;
   }
 }
+// container des annonces de location
+.location{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:50px;
+  padding-bottom:50px;
+  .location-Container{
+    width: 70%;
+    height: auto;
+    background:#F6F6F6;
+    border-radius:25px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .vignette{
+      margin:20px auto;
+      border-radius:20px;
+      width: 340px;
+      height: 340px;
+      background:linear-gradient(180deg, #FF6060 20%, #9c3b3b 100%);
+      display:flex;
+      align-items: flex-end;
+      p{
+        width: 80px;
+        font-size: 18px;
+        color:white;
+        padding:10px;
+      }
+    }
+  }
+}
 // footer de l'app
 .App-footer{
   background:black;
   width: 100%;
   height: auto;
   // penser à modifier la position du footer
-  position:absolute;
-  bottom:0;
+
   .blocFooter{
     display:flex;
     flex-direction: column;
