@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ArrowBack from '../../assets/arrow_back.png';
 
 export default function AproposContainer() {
+
   const [arrowRotation, setArrowRotation] = useState([false, false, false, false]);
   const [collapse, setCollapse] = useState([false, false, false, false]);
 
@@ -21,7 +22,6 @@ export default function AproposContainer() {
 
   return (
     <>
-
       <div className="nav-apropos">
         <div className={`menu-deroulant ${collapse[0] ? 'collapsed' : ''}`}>
           <p>Flabilité</p>

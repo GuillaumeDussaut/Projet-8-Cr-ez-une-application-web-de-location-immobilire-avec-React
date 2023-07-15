@@ -5,7 +5,7 @@ import imageAccueil from '../../assets/background1.png';
 import imageApropos from '../../assets/background2.png';
 import './bandeau.scss';
 
-export default function Bandeau() {
+export default function Bandeau({imageURL, title}) {
   const location = useLocation();
 
   let image;

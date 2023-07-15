@@ -1,14 +1,15 @@
-import * as React from "react";
+// App.js
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HeaderAccueil from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import AproposContainer from "./components/pages/Apropos";
+import Error404 from "./components/pages/404";
+import Bandeau from "./components/bandeau/bandeau";
+import Accueil from "./components/pages/accueil";
+import Location from "./components/pages/location";
 
-import HeaderAccueil from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import AproposContainer from './components/pages/Apropos';
-import Error404 from './components/pages/404';
-import Bandeau from './components/bandeau/bandeau';
-import Accueil from './components/pages/accueil';
-
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<AproposContainer />} />
+        <Route path="/location/:id" element={<Location />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
@@ -26,5 +28,8 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
