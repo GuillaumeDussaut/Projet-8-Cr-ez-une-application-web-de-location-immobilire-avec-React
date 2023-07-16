@@ -9,7 +9,7 @@ export default function Card(props) {
   return (
     <Link to={`/location/${id}`}>
       <div className="card" style={{ backgroundImage: `url(${image})` }}>
-        <h1>{title}</h1>
+      <h1>{title}</h1>
       </div>
     </Link>
   );

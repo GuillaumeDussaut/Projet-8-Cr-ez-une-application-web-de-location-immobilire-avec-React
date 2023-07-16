@@ -12,8 +12,13 @@
       background:#F6F6F6;
       border-radius:25px;
       display:flex;
-      justify-content: space-around;
-      flex-wrap:wrap;    
+      justify-content: center;
+      flex-wrap:wrap; 
+      a{
+        text-decoration:none;
+        margin:10px auto ;
+        padding:5px;
+      }   
       .card{
         cursor: pointer;
         margin:20px auto;
