@@ -8,7 +8,6 @@ import Collaps from '../components/collapse/collaps';
 import Rate from '../components/rate/rate';
 
 import "../components/tags/tags.scss";
-// import "../../App.scss";
 
 export default function Location() {
   const { id } = useParams();
@@ -29,21 +28,22 @@ export default function Location() {
           ))}
         </div>
         <div className="rate">
-          <Rate />
+          <Rate rating={rating} />
         </div>
       </div>
       <div className="ContainerCollaps">
-            <Collaps title="Description" collapsContent={description}></Collaps>
-            <Collaps title="Equipements" collapsContent={
-                <ul>
-                  {equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
-                </ul>}>
-            </Collaps>
-        </div>
+        <Collaps title="Description" collapsContent={description}></Collaps>
+        <Collaps title="Equipements" collapsContent={
+          <ul>
+            {equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>}>
+        </Collaps>
+      </div>
     </section>
   );
 }
+
 
 
