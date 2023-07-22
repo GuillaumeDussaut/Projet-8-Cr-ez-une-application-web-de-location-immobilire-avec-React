@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import dataJSON from "../data/data.json";
 import Slider from '../components/slider/slider';
 import HostInfo from '../components/hostInfo/hostInfo';
-import Description from '../components/description/description';
 import Collaps from '../components/collapse/collaps';
 import Rate from '../components/rate/rate';
 
@@ -26,10 +25,8 @@ export default function Location() {
               {tag}
             </div>
           ))}
-        </div>
-        <div className="rate">
+        </div>       
           <Rate rating={rating} />
-        </div>
       </div>
       <div className="ContainerCollaps">
         <Collaps title="Description" collapsContent={description}></Collaps>
