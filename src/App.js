@@ -3,10 +3,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeaderAccueil from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import AproposContainer from "./components/pages/Apropos";
-import Error404 from "./components/pages/404";
-import Accueil from "./components/pages/accueil";
-import Location from "./components/pages/location";
+import AproposContainer from "./pages/Apropos";
+import Error404 from "./pages/404";
+import Accueil from "./pages/accueil";
+import Location from "./pages/location";
 
 import "./App.scss";
 

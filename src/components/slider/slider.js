@@ -2,17 +2,15 @@ import React, { useState, useEffect } from "react";
 import './slider.scss';
 
 export default function Slider({ images }) {
+  
   const [currentSlide, setCurrentSlide] = useState(0);
   const numSlides = images.length;
-
   useEffect(() => {
     setCurrentSlide(0);
   }, [images]);
-
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % numSlides);
   };
-
   const prevSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide - 1 + numSlides) % numSlides);
   };

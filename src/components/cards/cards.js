@@ -3,8 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./cards.scss";
 
-export default function Card(props) {
-  const { id, title, image } = props;
+export default function Card({ id, title, image}) {
 
   return (
     <Link to={`/location/${id}`}>
@@ -14,6 +13,3 @@ export default function Card(props) {
     </Link>
   );
 }
-
-
-
