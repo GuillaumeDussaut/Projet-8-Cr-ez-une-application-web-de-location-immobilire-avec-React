@@ -1,0 +1,56 @@
+// a propos
+.nav-apropos {
+  width: 70%;
+  padding:35px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px auto;
+
+}
+
+// page erreur 404
+.error404{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#FF6060;
+  h1{
+    font-size: 288px;
+  }
+  p{
+    font-size: 36px;
+    margin-top:0;
+  }
+  a{
+    font-size: 18px;
+    color: #FF6060;
+    margin-bottom:139px;
+  }
+}
+// Locations
+.locationContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .ContainerCollaps{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .collapse-container{
+      width: 400px;
+      margin:10px;
+      margin-top:30px;
+      margin-bottom:50px;
+      
+    }
+  }
+}
+
+
