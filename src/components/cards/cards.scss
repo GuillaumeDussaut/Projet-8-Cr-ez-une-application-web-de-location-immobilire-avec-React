@@ -15,6 +15,8 @@
       justify-content: center;
       flex-wrap:wrap; 
       a{
+        width: 340px;
+        height: auto;
         text-decoration:none;
         margin:10px auto ;
         padding:5px;
@@ -22,14 +24,13 @@
           cursor: pointer;
           margin:20px auto;
           border-radius:20px;
-          width: 340px;
+          width: 100%;
           height: 340px;
           background:linear-gradient(180deg, #FF6060 20%, #9c3b3b 100%);
           background-size: cover;
           display:flex;
           align-items: flex-end;
           h1{
-            background:rgba(0, 0, 0, 0.205);
             width: 100%;
             font-size: 18px;
             color:white;
@@ -40,5 +41,24 @@
           transform:scale(1.05);
         }
       }   
+    }
+  }
+  @media screen and (min-width: 360px) and (max-width: 640px) {
+    .location{
+      padding-top:15px;
+      .cardsContainer{
+        background:transparent;
+        width: 100%;
+        a{
+          margin:0;
+          width: 335px;
+          height: 255px;
+          .card{
+            margin:0;
+            width: 100%;
+            height: 255px;
+          }
+        }
+      }
     }
   }

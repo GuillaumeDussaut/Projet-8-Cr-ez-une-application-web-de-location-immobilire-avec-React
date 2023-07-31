@@ -7,7 +7,12 @@ export default function Card({ id, title, image}) {
 
   return (
     <Link to={`/location/${id}`}>
-      <div className="card" style={{ backgroundImage: `url(${image})` }}>
+            <div
+        className="card"
+        style={{
+          backgroundImage: `linear-gradient(180deg, #fde8e80a 20%, #9c3b3b 100%), url(${image})`,
+        }}
+      >
       <h1>{title}</h1>
       </div>
     </Link>

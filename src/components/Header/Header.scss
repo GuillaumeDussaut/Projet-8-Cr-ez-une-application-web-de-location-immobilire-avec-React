@@ -25,3 +25,19 @@
       }
     }
   }
+  @media screen and (min-width: 360px) and (max-width: 640px) {
+    .App-header{
+      .App-logo{
+        width: 145px;
+        height: auto;
+      }
+      .liensHeader{
+        width: 209px;
+        font-size:12px;
+        font-weight: bolder;
+        a{
+          text-align:right;
+        }
+      }
+    }
+  }

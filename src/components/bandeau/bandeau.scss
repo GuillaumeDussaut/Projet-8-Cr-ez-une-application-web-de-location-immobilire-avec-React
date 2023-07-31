@@ -1,21 +1,36 @@
 // bandeau de l'app
 .Bandeau{
-    width: 100%;
+  width: 100%;
+  height: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  img{
+    width: 70%;
     height: 223px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
+    object-fit: cover;
+    border-radius:15px;
+    filter:brightness(80%);
+  }
+  p{
+    width: 70%;
+    text-align:center;
+    position:absolute;
+    font-size: 40px;
+    color:#FFF;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .Bandeau{
+    height: 111px;
     img{
-      width: 70%;
-      height: 100%;
-      object-fit: cover;
-      border-radius:15px;
-      filter:brightness(80%);
+      width: 90%;
+      height: 111px;
     }
     p{
-      position:absolute;
-      font-size: 40px;
-      color:#FFF;
+      font-size: 24px;
+      text-align:left;
     }
   }
+}

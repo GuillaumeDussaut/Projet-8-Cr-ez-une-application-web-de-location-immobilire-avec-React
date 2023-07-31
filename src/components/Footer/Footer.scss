@@ -20,3 +20,16 @@
       }
     }
   }
+  @media screen and (min-width: 360px) and (max-width: 640px) {
+    .App-footer{
+      .blocFooter{
+        p{
+          text-align: center;
+          width: 133.594px;
+          height: 46px;
+          font-size: 12px;
+        }
+      }
+  }
+}
+  
