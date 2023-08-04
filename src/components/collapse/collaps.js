@@ -18,7 +18,7 @@ export default function Collapse({title, collapsContent }) {
         </div>
         {isOpen && (
           <div className="collapse-content">
-            {collapsContent}
+            <p>{collapsContent}</p>
           </div>
         )}
       </div>

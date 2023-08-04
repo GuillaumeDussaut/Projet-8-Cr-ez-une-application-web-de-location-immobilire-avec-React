@@ -1,11 +1,13 @@
 .App-header{
+    width: 80%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding:25px;
+    margin:10px auto;
     .App-logo{
       width:210px;
       height: 68px;
+      padding:10px;
     }
     .liensHeader{
       color:#FF6060;
@@ -25,7 +27,7 @@
       }
     }
   }
-  @media screen and (min-width: 360px) and (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     .App-header{
       .App-logo{
         width: 145px;

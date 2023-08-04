@@ -10,7 +10,7 @@ export default function Card({ id, title, image}) {
             <div
         className="card"
         style={{
-          backgroundImage: `linear-gradient(180deg, #fde8e80a 20%, #9c3b3b 100%), url(${image})`,
+          backgroundImage: `linear-gradient(180deg, #fde8e80a 20%, #00000080 100%), url(${image})`,
         }}
       >
       <h1>{title}</h1>

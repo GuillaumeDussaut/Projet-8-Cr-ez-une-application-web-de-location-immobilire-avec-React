@@ -1,5 +1,7 @@
 // a propos
 .nav-apropos {
+  width: 70%;
+  margin: 10px auto;
   padding:35px;
   display:flex;
   flex-direction: column;
@@ -35,13 +37,13 @@
   align-items: center;
   width: 100%;
   .ContainerCollaps{
-    width: 100%;
+    width: 80%;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
     .collapse-container{
-      width: 40%;
+      width: 582px;
       margin:10px;
       margin-top:30px;
       margin-bottom:50px;

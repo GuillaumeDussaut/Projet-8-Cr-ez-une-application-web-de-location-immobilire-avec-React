@@ -1,5 +1,5 @@
 .sliderContainer{
-    width: 100%;
+    width: 90%;
     height: 415px;
     height: auto;
     border-radius:20px;
@@ -7,13 +7,13 @@
     justify-content: center;
     align-items: center;
     img{
-        width: 80%;
+        width: 90%;
         height: 415px;
         object-fit:cover;
         border-radius:20px;
     }
     .btns{
-        width: 70%;
+        width: 80%;
         position:absolute;
         display:flex;
         justify-content: center;
@@ -40,6 +40,35 @@
                 width: 50px;
                 height: 50px;
                 background:transparent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+    .sliderContainer{
+        margin:5px auto;
+        width: 100%;
+        img{
+            width: 80%;
+            height: 255px;
+        }
+        .btns{
+            .btnPrev{
+                left:0;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background:transparent;                   
+                }
+            }
+            .btnNext{
+                right:0;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background:transparent;
+                }
             }
         }
     }
