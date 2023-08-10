@@ -1,12 +1,17 @@
 // a propos
 .nav-apropos {
-  width: 70%;
+  width: 80%;
   margin: 10px auto;
   padding:35px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .collapse-container{
+    width: 90%;
+    margin:10px;
+    
+  }
 }
 
 // page erreur 404
@@ -36,20 +41,52 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  .hostContainer{
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .ContainerCollaps{
+    margin-top:20px;
     width: 80%;
     display:flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: flex-start;
     .collapse-container{
-      width: 582px;
-      margin:10px;
-      margin-top:30px;
-      margin-bottom:50px;
-      
+      width: 100%;
+
     }
   }
 }
 
-
+@media screen and (max-width: 640px){
+  .locationContainer{
+    .ContainerCollaps{
+      flex-wrap: wrap;
+    }
+    .hostContainer{
+      justify-content: space-between;
+      .Infos{
+        width: 100%;
+      }
+      .host{
+        order:4;
+        justify-self: flex-end;
+      }
+      .tags{
+        width: 100%;
+        .tag{
+          font-size: 12px;
+        }
+      }
+      .rateContainer{
+        width: 50%;
+        justify-content: flex-start;
+        svg{
+          width: 100%;
+        }
+      }
+    }
+  } 
+}
