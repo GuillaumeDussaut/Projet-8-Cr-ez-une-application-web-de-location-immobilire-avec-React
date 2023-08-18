@@ -7,11 +7,18 @@ import Collaps from '../components/collapse/collaps';
 import Rate from '../components/rate/rate';
 import Host from '../components/hostInfo/host';
 import Tags from '../components/tags/tags';
+import Error from '../pages/404';
 
 export default function Location() {
   const { id } = useParams();
   const data = dataJSON;
-  const selectedLocation = data.find((location) => location.id === id);
+  const idAsString = id.toString();
+  const selectedLocation = data.find((location) => location.id === idAsString);
+
+  if (!selectedLocation) {
+    return <Error/>;
+  }
+
   const { title, location, host, tags, description, equipments, rating, pictures } = selectedLocation;
 
   return (
